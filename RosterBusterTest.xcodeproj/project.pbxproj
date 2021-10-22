@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C923414C2715C5C5001EDFAE /* DateConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923414B2715C5C5001EDFAE /* DateConversion.swift */; };
+		C92341502715D912001EDFAE /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923414E2715D912001EDFAE /* FlightCell.swift */; };
+		C92341512715D912001EDFAE /* FlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C923414F2715D912001EDFAE /* FlightCell.xib */; };
+		C94C9CAB2721AB8400208035 /* RosterBusterDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C94C9CA92721AB8400208035 /* RosterBusterDataModel.xcdatamodeld */; };
+		C94C9CB62721C6C800208035 /* Flight+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C9CB42721C6C800208035 /* Flight+CoreDataClass.swift */; };
+		C94C9CB72721C6C800208035 /* Flight+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C9CB52721C6C800208035 /* Flight+CoreDataProperties.swift */; };
+		C952096227154E33007CD043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952096127154E33007CD043 /* AppDelegate.swift */; };
+		C952096427154E33007CD043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952096327154E33007CD043 /* SceneDelegate.swift */; };
+		C952096627154E33007CD043 /* RosterBusterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952096527154E33007CD043 /* RosterBusterVC.swift */; };
+		C952096927154E33007CD043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952096727154E33007CD043 /* Main.storyboard */; };
+		C952096E27154E34007CD043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C952096D27154E34007CD043 /* Assets.xcassets */; };
+		C952097127154E34007CD043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952096F27154E34007CD043 /* LaunchScreen.storyboard */; };
+		C952097F27154F1B007CD043 /* RosterBusterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952097E27154F1B007CD043 /* RosterBusterVM.swift */; };
+		C952098127154F9D007CD043 /* FlightDuties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952098027154F9D007CD043 /* FlightDuties.swift */; };
+		C952098427155000007CD043 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952098327155000007CD043 /* JsonHelper.swift */; };
+		C9A447DC271B13EF00E64D36 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A447DB271B13EF00E64D36 /* CoreDataHandler.swift */; };
+		C9A5481B2718407900B8826F /* FlightDutyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A5481A2718407900B8826F /* FlightDutyHeader.swift */; };
+		C9A548202718419700B8826F /* FlightDutyHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A5481F2718419700B8826F /* FlightDutyHeader.xib */; };
+		C9A5482227184C6A00B8826F /* FlightDutyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A5482127184C6A00B8826F /* FlightDutyDetailsVC.swift */; };
+		C9A5482427185AA100B8826F /* FlightDutyDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A5482327185AA100B8826F /* FlightDutyDetailsVM.swift */; };
+		C9A5482627185D0100B8826F /* FlightVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A5482527185D0100B8826F /* FlightVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C923414B2715C5C5001EDFAE /* DateConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConversion.swift; sourceTree = "<group>"; };
+		C923414E2715D912001EDFAE /* FlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
+		C923414F2715D912001EDFAE /* FlightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightCell.xib; sourceTree = "<group>"; };
+		C94C9CAA2721AB8400208035 /* RosterBusterDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RosterBusterDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C94C9CB42721C6C800208035 /* Flight+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flight+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C94C9CB52721C6C800208035 /* Flight+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flight+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C952095E27154E33007CD043 /* RosterBusterTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosterBusterTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C952096127154E33007CD043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C952096327154E33007CD043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C952096527154E33007CD043 /* RosterBusterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterBusterVC.swift; sourceTree = "<group>"; };
+		C952096827154E33007CD043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C952096D27154E34007CD043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C952097027154E34007CD043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C952097227154E34007CD043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C952097E27154F1B007CD043 /* RosterBusterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterBusterVM.swift; sourceTree = "<group>"; };
+		C952098027154F9D007CD043 /* FlightDuties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDuties.swift; sourceTree = "<group>"; };
+		C952098327155000007CD043 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		C9A447DB271B13EF00E64D36 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		C9A5481A2718407900B8826F /* FlightDutyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDutyHeader.swift; sourceTree = "<group>"; };
+		C9A5481F2718419700B8826F /* FlightDutyHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightDutyHeader.xib; sourceTree = "<group>"; };
+		C9A5482127184C6A00B8826F /* FlightDutyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDutyDetailsVC.swift; sourceTree = "<group>"; };
+		C9A5482327185AA100B8826F /* FlightDutyDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDutyDetailsVM.swift; sourceTree = "<group>"; };
+		C9A5482527185D0100B8826F /* FlightVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C952095B27154E33007CD043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C923414D2715D832001EDFAE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C9A5481E2718411E00B8826F /* SectionHeader */,
+				C923414E2715D912001EDFAE /* FlightCell.swift */,
+				C923414F2715D912001EDFAE /* FlightCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C952095527154E33007CD043 = {
+			isa = PBXGroup;
+			children = (
+				C952096027154E33007CD043 /* RosterBusterTest */,
+				C952095F27154E33007CD043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C952095F27154E33007CD043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C952095E27154E33007CD043 /* RosterBusterTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C952096027154E33007CD043 /* RosterBusterTest */ = {
+			isa = PBXGroup;
+			children = (
+				C952097A27154E55007CD043 /* Model */,
+				C952097927154E51007CD043 /* View */,
+				C952097827154E49007CD043 /* Controller */,
+				C952098227154FAE007CD043 /* Helper */,
+				C952097C27154E7D007CD043 /* CoreDataModel */,
+				C952097B27154E5A007CD043 /* Main */,
+				C952097D27154EAE007CD043 /* Resources */,
+				C952096F27154E34007CD043 /* LaunchScreen.storyboard */,
+				C952097227154E34007CD043 /* Info.plist */,
+			);
+			path = RosterBusterTest;
+			sourceTree = "<group>";
+		};
+		C952097827154E49007CD043 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C952096527154E33007CD043 /* RosterBusterVC.swift */,
+				C952097E27154F1B007CD043 /* RosterBusterVM.swift */,
+				C9A5482127184C6A00B8826F /* FlightDutyDetailsVC.swift */,
+				C9A5482327185AA100B8826F /* FlightDutyDetailsVM.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C952097927154E51007CD043 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C923414D2715D832001EDFAE /* TableViewCell */,
+				C952096727154E33007CD043 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C952097A27154E55007CD043 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C952098027154F9D007CD043 /* FlightDuties.swift */,
+				C9A5482527185D0100B8826F /* FlightVM.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C952097B27154E5A007CD043 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C952096127154E33007CD043 /* AppDelegate.swift */,
+				C952096327154E33007CD043 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C952097C27154E7D007CD043 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C94C9CB42721C6C800208035 /* Flight+CoreDataClass.swift */,
+				C94C9CB52721C6C800208035 /* Flight+CoreDataProperties.swift */,
+				C9A447DB271B13EF00E64D36 /* CoreDataHandler.swift */,
+				C94C9CA92721AB8400208035 /* RosterBusterDataModel.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		C952097D27154EAE007CD043 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C952096D27154E34007CD043 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C952098227154FAE007CD043 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C952098327155000007CD043 /* JsonHelper.swift */,
+				C923414B2715C5C5001EDFAE /* DateConversion.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C9A5481E2718411E00B8826F /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C9A5481A2718407900B8826F /* FlightDutyHeader.swift */,
+				C9A5481F2718419700B8826F /* FlightDutyHeader.xib */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C952095D27154E33007CD043 /* RosterBusterTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C952097527154E34007CD043 /* Build configuration list for PBXNativeTarget "RosterBusterTest" */;
+			buildPhases = (
+				C952095A27154E33007CD043 /* Sources */,
+				C952095B27154E33007CD043 /* Frameworks */,
+				C952095C27154E33007CD043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RosterBusterTest;
+			productName = RosterBusterTest;
+			productReference = C952095E27154E33007CD043 /* RosterBusterTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C952095627154E33007CD043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C952095D27154E33007CD043 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C952095927154E33007CD043 /* Build configuration list for PBXProject "RosterBusterTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C952095527154E33007CD043;
+			productRefGroup = C952095F27154E33007CD043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C952095D27154E33007CD043 /* RosterBusterTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C952095C27154E33007CD043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C952097127154E34007CD043 /* LaunchScreen.storyboard in Resources */,
+				C92341512715D912001EDFAE /* FlightCell.xib in Resources */,
+				C9A548202718419700B8826F /* FlightDutyHeader.xib in Resources */,
+				C952096E27154E34007CD043 /* Assets.xcassets in Resources */,
+				C952096927154E33007CD043 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C952095A27154E33007CD043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C923414C2715C5C5001EDFAE /* DateConversion.swift in Sources */,
+				C9A5482427185AA100B8826F /* FlightDutyDetailsVM.swift in Sources */,
+				C9A5482227184C6A00B8826F /* FlightDutyDetailsVC.swift in Sources */,
+				C94C9CB72721C6C800208035 /* Flight+CoreDataProperties.swift in Sources */,
+				C92341502715D912001EDFAE /* FlightCell.swift in Sources */,
+				C952096627154E33007CD043 /* RosterBusterVC.swift in Sources */,
+				C94C9CB62721C6C800208035 /* Flight+CoreDataClass.swift in Sources */,
+				C94C9CAB2721AB8400208035 /* RosterBusterDataModel.xcdatamodeld in Sources */,
+				C9A5482627185D0100B8826F /* FlightVM.swift in Sources */,
+				C9A447DC271B13EF00E64D36 /* CoreDataHandler.swift in Sources */,
+				C952097F27154F1B007CD043 /* RosterBusterVM.swift in Sources */,
+				C952098427155000007CD043 /* JsonHelper.swift in Sources */,
+				C9A5481B2718407900B8826F /* FlightDutyHeader.swift in Sources */,
+				C952098127154F9D007CD043 /* FlightDuties.swift in Sources */,
+				C952096227154E33007CD043 /* AppDelegate.swift in Sources */,
+				C952096427154E33007CD043 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C952096727154E33007CD043 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C952096827154E33007CD043 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C952096F27154E34007CD043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C952097027154E34007CD043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C952097327154E34007CD043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C952097427154E34007CD043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C952097627154E34007CD043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5Q4WTVZF;
+				INFOPLIST_FILE = RosterBusterTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosterbuster.test.RosterBusterTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C952097727154E34007CD043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ5Q4WTVZF;
+				INFOPLIST_FILE = RosterBusterTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosterbuster.test.RosterBusterTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C952095927154E33007CD043 /* Build configuration list for PBXProject "RosterBusterTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C952097327154E34007CD043 /* Debug */,
+				C952097427154E34007CD043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C952097527154E34007CD043 /* Build configuration list for PBXNativeTarget "RosterBusterTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C952097627154E34007CD043 /* Debug */,
+				C952097727154E34007CD043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C94C9CA92721AB8400208035 /* RosterBusterDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C94C9CAA2721AB8400208035 /* RosterBusterDataModel.xcdatamodel */,
+			);
+			currentVersion = C94C9CAA2721AB8400208035 /* RosterBusterDataModel.xcdatamodel */;
+			path = RosterBusterDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C952095627154E33007CD043 /* Project object */;
+}
